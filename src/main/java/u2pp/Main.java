@@ -8,11 +8,41 @@ import java.util.Scanner; //Allows you to use the Scanner objects
 
 class Main {
   public static void main(String[] args) {
+		
+	    
+		
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.print("Enter a fuel efficiency: ");
+		double efficiency = Double.parseDouble(sc.nextLine());
+		System.out.print("Enter a make: ");
+		String make = sc.nextLine();
+		System.out.print("Enter a model: ");
+		String model = sc.nextLine();
+		Car vroom = new Car(efficiency, make, model);
+		System.out.print("Enter amount of gas to add: ");
+		double gasToAdd = Double.parseDouble(sc.nextLine());
+		vroom.addGas(gasToAdd);
+		System.out.print("Enter distance to drive: ");
+		double distanceToDrive = Double.parseDouble(sc.nextLine());
+		vroom.drive(distanceToDrive);
+		System.out.println("Your " + vroom.getMakeAndModel()
+			+ " currently has " + vroom.getGasInTank() + " gallons of gas left in the tank");
+		
+		sc.close();
     
-    //YOUR CODE HERE
-    
+	  
+		String word1 = "poop";
+		int start1 = 1;
+		int end1 = 3;
+		String word2 = "fart";
+		int start2 = 0;
+		int end2 = 4;
+		String result = wordChanger (word1, start1, end1, word2, start2, end2);
+		System.out.println (result);
   }
-  
+  			
   /**
    * YOUR COMMENT HERE
    * @param word1 The first string to take a piece out of
@@ -24,7 +54,10 @@ class Main {
    * @return YOUR COMMENT HERE
    */
   public static String wordChanger(String word1, int start1, int end1, String word2, int start2, int end2) {
-    //YOUR CODE HERE
-    return "";
+			 String uno = word1.substring(start1, end1 + 1);
+			 String dos = word2.substring(start2, end2 + 1);
+			  
+
+	  		return uno+dos;
   }
 }

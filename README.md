@@ -1,3 +1,21 @@
+For PART C, you will be adding to the Main class a new method called wordChanger. The wordChanger method should take 6 parameters, should be static and should return a String. The parameters should be:
+1.String word1
+2.int start1
+3.int end1
+4.String word2
+5.int start2
+6.int end2
+
+wordChanger takes the pieces of two words and creates a new word by combining those pieces together. The start and end variables tell you the indices where to start and end the piece of the word in the String, inclusive.
+For PART C, you will be adding to the Main class a new method called wordChanger. The wordChanger method should take 6 parameters, should be static and should return a String. The parameters should be:
+1.String word1
+2.int start1
+3.int end1
+4.String word2
+5.int start2
+6.int end2
+
+wordChanger takes the pieces of two words and creates a new word by combining those pieces together. The start and end variables tell you the indices where to start and end the piece of the word in the String, inclusive.
 # Unit 2 Programming Project
 
 For this project, you will be writing a `Car` class and writing code in the `Main` class to see it in action. You will also be creating a `static` method in the `Main` class, and if you attempt the **BONUS** you will refactor your method into its own class.
